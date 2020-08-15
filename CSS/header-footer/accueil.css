@@ -1,0 +1,360 @@
+/*Text avec changement de couleur*/
+/*4 menus*/
+nav {
+  width: 75%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6em;
+}
+
+.Menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+}
+
+.note {
+  background-color: #fcdfdb;
+  height: 26em;
+  width: 18em;
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative;
+  right: -1%;
+  -webkit-box-shadow: 0px 0px 8px #cfcfcf;
+          box-shadow: 0px 0px 8px #cfcfcf;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #3d1319;
+}
+
+.note__txt {
+  font-size: 1.2em;
+  font-family: 'devonshireregular';
+  font-size: 1.8em;
+}
+
+.delice {
+  background-color: #f9f9f9;
+  height: 26em;
+  width: 18em;
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative;
+  right: -1%;
+  -webkit-box-shadow: 0px 0px 8px #cfcfcf;
+          box-shadow: 0px 0px 8px #cfcfcf;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.delice__txt {
+  background: linear-gradient(0.8turn, #a6d8ff, #1b427c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2em;
+  font-family: 'alex_brushregular';
+  font-size: 1.8em;
+}
+
+#chic {
+  background-color: #fff5fe;
+  height: 26em;
+  width: 18em;
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative;
+  right: -1%;
+  -webkit-box-shadow: 0px 0px 8px #cfcfcf;
+          box-shadow: 0px 0px 8px #cfcfcf;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#chic__txt {
+  background: linear-gradient(0.8turn, #460d46, #c77412);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2em;
+  margin-top: 3.5em;
+  font-family: 'croissant_oneregular';
+}
+
+#palette {
+  height: 26em;
+  width: 18em;
+  margin-left: 2em;
+  margin-right: 2em;
+  position: relative;
+  right: -1%;
+  -webkit-box-shadow: 0px 0px 8px #cfcfcf;
+          box-shadow: 0px 0px 8px #cfcfcf;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#palette__txt {
+  background: linear-gradient(0.8turn, #c2c2c2, #4e9e49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2em;
+  font-family: 'kaushan_scriptregular';
+  font-size: 1.6em;
+}
+
+.police {
+  font-family: 'street_freehanditalic';
+  font-size: 1.6em;
+}
+
+.police--2 {
+  font-size: 1.6em;
+  font-family: 'serif12_betabold';
+}
+
+.police--3 {
+  font-family: 'giotto_handwritingregular';
+  font-size: 2.2em;
+}
+
+.police--4 {
+  margin-top: 1.7em;
+}
+
+#note2 a {
+  text-decoration: none;
+  color: #3d1319;
+}
+
+#chic2 a {
+  text-decoration: none;
+  color: #c77412;
+}
+
+#delice2 a {
+  text-decoration: none;
+  color: #45a1ec;
+}
+
+#palette2 a {
+  text-decoration: none;
+  color: #4e9e49;
+}
+
+/*Prochainement*/
+aside h2 {
+  text-align: center;
+  color: #e4d023;
+  border: 1px solid #11836a;
+  background-color: #11836a;
+  border-radius: 8px/ 10px;
+  width: 9em;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  padding: 0.3em;
+}
+
+@media all and (max-width: 810px) {
+  .note {
+    width: 16em;
+    height: 24em;
+  }
+  .delice {
+    width: 16em;
+    height: 24em;
+  }
+  #chic {
+    width: 16em;
+    height: 24em;
+  }
+  #palette {
+    width: 16em;
+    height: 24em;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .note {
+    width: 12em;
+    height: 20em;
+  }
+  .delice {
+    width: 12em;
+    height: 20em;
+  }
+  #chic {
+    width: 12em;
+    height: 20em;
+  }
+  #palette {
+    width: 12em;
+    height: 20em;
+  }
+  aside h2 {
+    font-size: 1.35em;
+  }
+  footer {
+    font-size: 0.98em;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .note {
+    width: 13em;
+    height: 20em;
+    font-size: 0.88em;
+  }
+  .delice {
+    width: 13em;
+    height: 20em;
+    font-size: 0.88em;
+  }
+  #chic {
+    width: 13em;
+    height: 20em;
+    font-size: 0.88em;
+  }
+  #palette {
+    width: 13em;
+    height: 20em;
+    font-size: 0.88em;
+  }
+  footer {
+    font-size: 0.92em;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .note {
+    width: 13em;
+    height: 20em;
+    font-size: 0.75em;
+  }
+  .delice {
+    width: 13em;
+    height: 20em;
+    font-size: 0.75em;
+  }
+  #chic {
+    width: 13em;
+    height: 20em;
+    font-size: 0.75em;
+  }
+  #palette {
+    width: 13em;
+    height: 20em;
+    font-size: 0.75em;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .note {
+    width: 13em;
+    height: 20em;
+    font-size: 1em;
+  }
+  .delice {
+    width: 13em;
+    height: 20em;
+    font-size: 1em;
+  }
+  #chic {
+    width: 13em;
+    height: 20em;
+    font-size: 1em;
+  }
+  #palette {
+    width: 13em;
+    height: 20em;
+    font-size: 1em;
+  }
+  aside h2 {
+    font-size: 1.2em;
+  }
+  footer {
+    font-size: 0.86em;
+  }
+}
+
+@media all and (max-width: 330px) {
+  .note {
+    width: 13em;
+    height: 20em;
+    font-size: 0.58em;
+  }
+  .delice {
+    width: 13em;
+    height: 20em;
+    font-size: 0.58em;
+  }
+  #chic {
+    width: 13em;
+    height: 20em;
+    font-size: 0.58em;
+  }
+  #palette {
+    width: 13em;
+    height: 20em;
+    font-size: 0.58em;
+  }
+  footer {
+    font-size: 0.81em;
+  }
+}
+/*# sourceMappingURL=accueil.css.map */

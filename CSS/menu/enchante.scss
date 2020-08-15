@@ -1,0 +1,160 @@
+@import "police";
+
+$marron : rgb(73, 19, 19);
+$bleu-clair : rgb(69, 161, 236);
+$orange : rgb(226, 131, 76);
+$vert: rgb(6, 148, 6);
+
+@mixin box{
+    height: 90vh;
+    max-height: 90vh;
+    width: 60%;
+    position: relative;
+    box-shadow: 0px 0px 8px #cfcfcf;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.titre {
+    text-align: center;
+    font-family: 'ambleregular';
+    color: rgb(66, 64, 64);
+    font-size: 1.5em;
+    font-weight: bold;
+    &__2{
+        font-family: 'devonshireregular';
+        font-size: 2.5em;
+        color: $marron;
+    }
+    
+}
+
+#music{
+    font-size: 4em;
+    margin-top: 0.5em;
+    margin-bottom: -0.4em;
+    &--2{
+        font-size: 2em;
+        color: $orange;
+    }
+}
+
+.box {
+    @include box;
+    background-color: #f7dcdc;
+    margin-bottom: 4em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    font-family: 'caricaturistaregular';
+    letter-spacing: -0.05em;
+    font-size: 1.15em;
+    color: $marron;
+}
+
+.trait{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.prelude{
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+}
+
+.mvt{
+    margin-left: -0.15em;
+    margin-right: -0.15em;
+}
+
+.ptitre{
+    position: relative;
+    bottom: 0.5em;
+}
+
+.enchante{
+    font-family: 'devonshireregular';
+    color: $marron;
+    font-size: 1.4em;
+    margin-left: 0.7em;
+    position: relative;
+    bottom: 0.7em;
+}
+
+.marge{
+    margin-bottom: 3.2em;
+}
+
+/*.prix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30em;
+    margin-left: 8.20em;
+}*/
+
+
+@media all and (max-width: 980px){
+
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media all and (max-width: 794px){
+
+    body {
+        font-size: 0.8em;
+    }
+
+    img {
+        width: 10em;
+    }
+
+}
+
+@media all and (max-width: 604px){
+
+    body {
+        font-size: 0.68em;
+    }
+
+    img {
+        width: 8em;
+    }
+
+}
+
+@media all and (max-width: 426px){
+
+    body {
+        font-size: 0.56em;
+    }
+
+    img {
+        width: 6.5em;
+    }
+
+}
+
+@media all and (max-height: 1236px){
+
+    .box {
+        height: 180vh;
+        max-height: 100vh;
+    }
+}
+
+@media all and (max-height: 667px){
+
+    .box {
+        height: 180vh;
+        max-height: 120vh;
+    }
+}

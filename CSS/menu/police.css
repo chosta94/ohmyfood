@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'open_sanslight';
+  src: url("fonts/OpenSans-Light-webfont.eot");
+  src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light-webfont.woff2") format("woff2"), url("fonts/OpenSans-Light-webfont.woff") format("woff"), url("fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ambleregular';
+  src: url("fonts/Amble-Regular-webfont.eot");
+  src: url("fonts/Amble-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Amble-Regular-webfont.woff2") format("woff2"), url("fonts/Amble-Regular-webfont.woff") format("woff"), url("fonts/Amble-Regular-webfont.ttf") format("truetype"), url("fonts/Amble-Regular-webfont.svg#ambleregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'meriendaregular';
+  src: url("fonts/merienda-regular-webfont.eot");
+  src: url("fonts/merienda-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/merienda-regular-webfont.woff2") format("woff2"), url("fonts/merienda-regular-webfont.woff") format("woff"), url("fonts/merienda-regular-webfont.ttf") format("truetype"), url("fonts/merienda-regular-webfont.svg#meriendaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'alex_brushregular';
+  src: url("fonts/alexbrush-regular-webfont.eot");
+  src: url("fonts/alexbrush-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/alexbrush-regular-webfont.woff2") format("woff2"), url("fonts/alexbrush-regular-webfont.woff") format("woff"), url("fonts/alexbrush-regular-webfont.ttf") format("truetype"), url("fonts/alexbrush-regular-webfont.svg#alex_brushregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'devonshireregular';
+  src: url("fonts/devonshire-regular-webfont.eot");
+  src: url("fonts/devonshire-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/devonshire-regular-webfont.woff2") format("woff2"), url("fonts/devonshire-regular-webfont.woff") format("woff"), url("fonts/devonshire-regular-webfont.ttf") format("truetype"), url("fonts/devonshire-regular-webfont.svg#devonshireregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'street_freehanditalic';
+  src: url("fonts/street-freehand-italic_42658-webfont.eot");
+  src: url("fonts/street-freehand-italic_42658-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/street-freehand-italic_42658-webfont.woff2") format("woff2"), url("fonts/street-freehand-italic_42658-webfont.woff") format("woff"), url("fonts/street-freehand-italic_42658-webfont.ttf") format("truetype"), url("fonts/street-freehand-italic_42658-webfont.svg#street_freehanditalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'giotto_handwritingregular';
+  src: url("fonts/giottohandwriting-webfont.eot");
+  src: url("fonts/giottohandwriting-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/giottohandwriting-webfont.woff2") format("woff2"), url("fonts/giottohandwriting-webfont.woff") format("woff"), url("fonts/giottohandwriting-webfont.ttf") format("truetype"), url("fonts/giottohandwriting-webfont.svg#giotto_handwritingregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kaushan_scriptregular';
+  src: url("fonts/kaushanscript-regular-webfont.eot");
+  src: url("fonts/kaushanscript-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/kaushanscript-regular-webfont.woff2") format("woff2"), url("fonts/kaushanscript-regular-webfont.woff") format("woff"), url("fonts/kaushanscript-regular-webfont.ttf") format("truetype"), url("fonts/kaushanscript-regular-webfont.svg#kaushan_scriptregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'serif12_betabold';
+  src: url("fonts/serif12beta-bold-webfont.eot");
+  src: url("fonts/serif12beta-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/serif12beta-bold-webfont.woff2") format("woff2"), url("fonts/serif12beta-bold-webfont.woff") format("woff"), url("fonts/serif12beta-bold-webfont.ttf") format("truetype"), url("fonts/serif12beta-bold-webfont.svg#serif12_betabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'croissant_oneregular';
+  src: url("fonts/croissantone-regular-webfont.eot");
+  src: url("fonts/croissantone-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/croissantone-regular-webfont.woff2") format("woff2"), url("fonts/croissantone-regular-webfont.woff") format("woff"), url("fonts/croissantone-regular-webfont.ttf") format("truetype"), url("fonts/croissantone-regular-webfont.svg#croissant_oneregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'clementepdaksemibold';
+  src: url("fonts/clementepdak-semibold-webfont.eot");
+  src: url("fonts/clementepdak-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/clementepdak-semibold-webfont.woff2") format("woff2"), url("fonts/clementepdak-semibold-webfont.woff") format("woff"), url("fonts/clementepdak-semibold-webfont.ttf") format("truetype"), url("fonts/clementepdak-semibold-webfont.svg#clementepdaksemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fibel_sued_konturregular';
+  src: url("fonts/fibel_sued_kontur-webfont.eot");
+  src: url("fonts/fibel_sued_kontur-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fibel_sued_kontur-webfont.woff2") format("woff2"), url("fonts/fibel_sued_kontur-webfont.woff") format("woff"), url("fonts/fibel_sued_kontur-webfont.ttf") format("truetype"), url("fonts/fibel_sued_kontur-webfont.svg#fibel_sued_konturregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("fonts/montserrat-regular-webfont.eot");
+  src: url("fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-regular-webfont.woff2") format("woff2"), url("fonts/montserrat-regular-webfont.woff") format("woff"), url("fonts/montserrat-regular-webfont.ttf") format("truetype"), url("fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'caricaturistaregular';
+  src: url("fonts/caricaturista-webfont.eot");
+  src: url("fonts/caricaturista-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/caricaturista-webfont.woff2") format("woff2"), url("fonts/caricaturista-webfont.woff") format("woff"), url("fonts/caricaturista-webfont.ttf") format("truetype"), url("fonts/caricaturista-webfont.svg#caricaturistaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=police.css.map */

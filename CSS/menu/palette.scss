@@ -1,0 +1,144 @@
+@import "police";
+
+$marron : rgb(73, 19, 19);
+$bleu-clair : rgb(69, 161, 236);
+$orange : rgb(226, 131, 76);
+$vert: rgb(6, 148, 6);
+
+@mixin box{
+    height: 90vh;
+    max-height: 90vh;
+    width: 60%;
+    position: relative;
+    box-shadow: 0px 0px 8px #cfcfcf;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.titre {
+    text-align: center;
+    font-family: 'ambleregular';
+    color: rgb(66, 64, 64);
+    font-size: 1.5em;
+    font-weight: bold;
+    &__2{
+        font-family: 'kaushan_scriptregular';
+        color: $vert;
+        font-size: 3em;
+        background: linear-gradient(0.8turn, #460d46, #c77412);
+        background-clip: border-box;
+        background-clip: text;
+    }
+    
+}
+
+.ptitre{
+    position: relative;
+    bottom: 0.9em;
+}
+
+.box {
+    @include box;
+    margin-bottom: 4em;
+    letter-spacing: 0.03em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    font-size: 1.15em;
+    font-family: 'caricaturistaregular';
+}
+
+.trait{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.trait2{
+    position: relative;
+    top: 0.17em;
+}
+
+.esquisse{
+    margin-left: 2.8em;
+    margin-right: 2.8em;
+}
+
+.art{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.oeuvre{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.marge{
+    margin-bottom: 3.5em;
+}
+
+@media all and (max-width: 980px){
+
+    body {
+        font-size: 0.9em;
+    }
+}
+
+@media all and (max-width: 794px){
+
+    body {
+        font-size: 0.8em;
+    }
+
+    img {
+        width: 10em;
+    }
+
+}
+
+@media all and (max-width: 604px){
+
+    body {
+        font-size: 0.68em;
+    }
+
+    img {
+        width: 8em;
+    }
+
+}
+
+@media all and (max-width: 426px){
+
+    body {
+        font-size: 0.56em;
+    }
+
+    img {
+        width: 6.5em;
+    }
+
+}
+
+@media all and (max-height: 1236px){
+
+    .box {
+        height: 180vh;
+        max-height: 100vh;
+    }
+}
+
+@media all and (max-height: 667px){
+
+    .box {
+        height: 180vh;
+        max-height: 120vh;
+    }
+
+}

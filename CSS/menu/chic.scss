@@ -9,6 +9,7 @@ $vert: rgb(6, 148, 6);
     height: 90vh;
     max-height: 90vh;
     width: 60%;
+    padding: 2em;
     position: relative;
     box-shadow: 0px 0px 8px #cfcfcf;
     text-align: center;
@@ -58,7 +59,12 @@ section {
 .trait{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.prix{
+    min-width: 33em;
+    display: flex;
 }
 
 .trait2{
@@ -69,7 +75,10 @@ section {
 .orange{
     color: $orange;
     &--2{
-        margin-bottom: 4em;
+        margin-bottom: 3em;
+    }
+    &--3{
+        margin-top: 0.8em;
     }
 }
 
@@ -87,9 +96,13 @@ section {
     }
 }
 
-.plaisir{
-    margin-left: 1.2em;
-    margin-right: 1.2em;
+.ecart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    padding-right: 3.2em;
+    padding-left: 3.2em;
 }
 
 @media all and (max-width: 980px){

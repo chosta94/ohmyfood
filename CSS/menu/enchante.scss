@@ -9,6 +9,7 @@ $vert: rgb(6, 148, 6);
     height: 90vh;
     max-height: 90vh;
     width: 60%;
+    padding: 2em;
     position: relative;
     box-shadow: 0px 0px 8px #cfcfcf;
     text-align: center;
@@ -32,6 +33,15 @@ $vert: rgb(6, 148, 6);
     
 }
 
+.ecart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    padding-right: 3.2em;
+    padding-left: 3.2em;
+}
+
 #music{
     font-size: 4em;
     margin-top: 0.5em;
@@ -39,7 +49,15 @@ $vert: rgb(6, 148, 6);
     &--2{
         font-size: 2em;
         color: $orange;
+        position: relative;
+        top: 0.5em;
+        right: 2.5em;
     }
+}
+
+.prix{
+    min-width: 28em;
+    display: flex;
 }
 
 .box {
@@ -60,22 +78,22 @@ section {
 .trait{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    &--2{
+        justify-content: space-around;
+    }
+}
+
+.trait__music{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-}
-
-.prelude{
-    margin-left: 0.7em;
-    margin-right: 0.7em;
-}
-
-.mvt{
-    margin-left: -0.15em;
-    margin-right: -0.15em;
 }
 
 .ptitre{
     position: relative;
     bottom: 0.5em;
+
 }
 
 .enchante{
@@ -88,7 +106,7 @@ section {
 }
 
 .marge{
-    margin-bottom: 3.2em;
+    margin-bottom: 2em;
 }
 
 /*.prix {

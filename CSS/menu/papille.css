@@ -124,6 +124,29 @@
   font-size: 4em;
 }
 
+.ecart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5em;
+  padding-right: 3.2em;
+  padding-left: 3.2em;
+}
+
+.prix {
+  min-width: 29em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .ptitre {
   position: relative;
   bottom: 0.6em;
@@ -134,6 +157,7 @@
   height: 90vh;
   max-height: 90vh;
   width: 60%;
+  padding: 2em;
   position: relative;
   -webkit-box-shadow: 0px 0px 8px #cfcfcf;
           box-shadow: 0px 0px 8px #cfcfcf;
@@ -171,9 +195,9 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .trait2 {

@@ -9,6 +9,7 @@ $vert: rgb(6, 148, 6);
     height: 90vh;
     max-height: 90vh;
     width: 60%;
+    padding: 2em;
     position: relative;
     box-shadow: 0px 0px 8px #cfcfcf;
     text-align: center;
@@ -35,6 +36,21 @@ $vert: rgb(6, 148, 6);
     
 }
 
+.ecart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    padding-right: 3.2em;
+    padding-left: 3.2em;
+}
+
+.prix{
+    min-width: 36em;
+    display: flex;
+}
+
+
 .ptitre{
     position: relative;
     bottom: 0.9em;
@@ -56,7 +72,7 @@ section {
 .trait{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .trait2{
@@ -81,6 +97,15 @@ section {
 
 .marge{
     margin-bottom: 3.5em;
+}
+
+.ecart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    padding-right: 3.2em;
+    padding-left: 3.2em;
 }
 
 @media all and (max-width: 980px){

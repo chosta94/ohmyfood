@@ -7,7 +7,9 @@ footer {
     width: 375px;
     height: 186px;
     background-color: $color-footer;
-
+    @media (min-width: $bp-desktop) {
+        width: 1440px;
+    }
     a{
         text-decoration: none;
         color: white;
@@ -27,7 +29,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
     &__title {
         @include police('Shrikhand', 400, 18px);
         color: white;

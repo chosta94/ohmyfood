@@ -11,6 +11,11 @@ footer {
   height: 186px;
   background-color: #353535;
 }
+@media (min-width: 1440px) {
+  footer {
+    width: 1440px;
+  }
+}
 footer a {
   text-decoration: none;
   color: white;

@@ -21,8 +21,9 @@
 @mixin bouton($width) {
     width: $width;
     height: 50px;
-    border: 1px solid;
+    border: 0px solid;
     color: white;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     background: linear-gradient($color-pink, $color-purple);
     border-radius: 25px;
     @include police('Roboto', 500, 16px);
@@ -31,4 +32,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin id($position) {
+    position : relative;
+    left: $position;
+    @include police('Roboto', 500, 14.18px);
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: $color-purple;
 }

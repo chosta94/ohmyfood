@@ -1,0 +1,42 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/***** Footer *****/
+footer {
+    color: white;
+    width: 375px;
+    height: 186px;
+    background-color: $color-footer;
+
+    a{
+        text-decoration: none;
+        color: white;
+        @include police('Roboto', 500, 16px);
+        &:hover {
+            color: #c4c4c4;
+        }
+    }
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.footer {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        @include police('Shrikhand', 400, 18px);
+        color: white;
+        margin-bottom: 18px;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+
+    }
+}

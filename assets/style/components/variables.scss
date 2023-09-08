@@ -1,0 +1,19 @@
+/*Fichier des variables globales du projet*/
+
+/* Couleurs */
+$color-background: #F3F3F3;
+$color-search-place: #EAEAEA;
+$color-purple: #9356DC;
+$color-pink: #FF79DA;
+$color-green: #99E2D0;
+$color-footer: #353535;
+$color-green-text: #008766;
+
+/* Breakpoints */
+$bp-desktop:1440px;
+
+@mixin desktop {
+    @media (min-width: $bp-desktop) {
+        @content;
+    }
+}

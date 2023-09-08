@@ -1,0 +1,45 @@
+/*Fichier des variables globales du projet*/
+/* Couleurs */
+/* Breakpoints */
+/***** Sections *****/
+/***** Polices *****/
+/***** Boutons *****/
+/***** Footer *****/
+footer {
+  color: white;
+  width: 375px;
+  height: 186px;
+  background-color: #353535;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+}
+footer a:hover {
+  color: #c4c4c4;
+}
+footer img {
+  margin-right: 10px;
+}
+
+.footer {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__title {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 18px;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}/*# sourceMappingURL=footer.css.map */

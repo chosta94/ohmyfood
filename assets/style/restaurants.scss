@@ -1,0 +1,139 @@
+@import './components/variables.scss';
+@import './components/footer.scss';
+@import './components/mixins.scss';
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    height: 63px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    a {
+        position: absolute;
+        left: 17px;
+        width: 30px;
+        height: 30px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    img {
+        margin: 0;
+        width: 197px;
+        height: 36px;
+    }
+}
+
+/***** Sections *****/
+/* Section img */
+.section__img {
+    width: 375px;
+    height: 275px;
+    z-index: 0;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.section__menu {
+    position: relative;
+    margin-top: -55px; 
+    padding-top: 55px; 
+    width: 375px;
+    height: 1121px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: $color-background;
+    z-index: 1;
+    &--enchantee {
+        position: relative;
+        margin-top: -55px; 
+        padding-top: 55px; 
+        width: 375px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background: $color-background;
+        z-index: 1;
+        height: 1180px;
+    }
+    &--padding{
+        padding: 0 17px 0 17px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 23px;
+        @include police('Shrikhand', 400, 28px);
+        margin-bottom: 40px;
+        img {
+            width: 22px;
+            height: 21px;
+        }
+        &__plat{
+            @include police('Roboto', 300, 16px);
+            text-transform: uppercase;
+            &__border {
+                width: 40px;
+                border-bottom: 3px solid $color-green;
+                margin-top: 5px;
+            }
+        }
+    }
+    &__box {
+        height: 69px;
+        background: white;
+        border-radius: 15.04px;
+        margin-top: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px 0 15px;
+        &__title {
+            @include police('Roboto', 500, 18px);
+        }
+        &__txt {
+            @include police('Roboto', 300, 15px);
+        }
+        &__price {
+            @include police('Roboto', 700, 15px);
+            color: $color-footer;
+            &--align {
+                height: 42px;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+    &__entree {
+        margin-bottom: 40px;
+    }
+    &__plat {
+        margin-bottom: 40px;
+    }
+    &__dessert {
+        margin-bottom: 40px;
+    }   
+}
+
+/***** Boutons *****/
+.btn {
+    @include bouton(186px);
+    &__div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

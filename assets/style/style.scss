@@ -1,0 +1,176 @@
+@import './components/variables.scss';
+@import './restaurants.scss';
+@import './components/footer.scss';
+@import './components/mixins.scss';
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 2252px;
+}
+
+header {
+    height: 63px;
+    width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    img {
+        width: 197px;
+        height: 36px;
+    }
+}
+
+/***** Sections *****/
+/* Section 1 */
+.search-bar {
+    z-index: 0;
+    @include section(50px, 375px, $color-search-place);
+    flex-direction: row;
+    justify-content: center;
+    img {
+        margin-right: 16px;
+        margin-left: 25%;
+    }
+    input {
+        border:none;
+        background: none;
+        background-color: inherit;
+        @include police('Roboto', 500, 16px);
+        color: $color-footer;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+/* Section 2 */
+.exploration {
+    @include section(288px, 375px, $color-background);
+    text-align: center;
+    h2 {
+        width: 275px;
+        height: 68px;
+    }
+}
+
+/* Section 3 */
+.fonctionnement {
+    @include section(440px, 375px, white);
+    
+    &__div{
+        width: 322.49px;
+        height: 72.38px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: $color-background;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 3px 8px 2px;
+        border-radius: 20px;
+        margin-bottom: 26px;
+
+        img {
+            position: relative;
+            left: -27px;
+        }
+
+        &--id {
+            position : relative;
+            left: -65px;
+            @include police('Roboto', 500, 14.18px);
+            border-radius: 100%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background: $color-purple;
+
+            p {
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+}
+
+/* Section 4 */
+.restaurants {
+    position: relative;
+    @include section(1226px, 375px, $color-background);
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__div {
+        width: 340px;
+        height: 251px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+        border-radius: 15px;
+        margin-bottom: 18px;
+        &--img {
+            width: 100%;
+            height: 174px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        &__bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 77px;
+            h4 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+
+            &__txt {
+                margin-left: 14px;
+            }
+
+            &__img {
+                margin-right: 25px;
+            }
+        }
+    }
+}
+
+/***** Polices *****/
+h2 {
+    @include police('Roboto', 700, 24px);
+}
+
+h3 {
+    @include police('Roboto', 300, 18px);
+}
+
+h4 {
+    @include police('Roboto', 700, 18px);
+}
+
+.medium-txt {
+    @include police('Roboto', 500, 16px);
+}
+
+.light-txt {
+    @include police('Roboto', 300, 17px);
+}
+
+/***** Boutons *****/
+.btn {
+    @include bouton(218px);
+}
+

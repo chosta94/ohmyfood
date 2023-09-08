@@ -101,8 +101,23 @@ header {
 
 /* Section 4 */
 .restaurants {
-    position: relative;
     @include section(1226px, 375px, $color-background);
+
+    &__nouveau {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        top:13px;
+        right: 13px;
+        z-index: 1;
+        width: 80px;
+        height: 29px;
+        background: $color-green;
+        color:$color-green-text;
+        border-radius: 2px;
+        @include police('Roboto', 500, 14px);
+    }
 
     a {
         text-decoration: none;
@@ -110,6 +125,7 @@ header {
     }
 
     &__div {
+        position: relative;
         width: 340px;
         height: 251px;
         display: flex;

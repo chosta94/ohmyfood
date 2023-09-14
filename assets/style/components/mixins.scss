@@ -1,7 +1,7 @@
 /***** Sections *****/
-@mixin section($height, $width, $background-color) {
+@mixin section($height, $background-color) {
     height: $height;
-    width: $width;
+    width: 100%;
     background-color: $background-color;
     display: flex;
     flex-direction: column;
@@ -47,3 +47,4 @@
     color: white;
     background: $color-purple;
 }
+

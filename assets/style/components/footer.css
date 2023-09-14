@@ -7,14 +7,9 @@
 /***** Footer *****/
 footer {
   color: white;
-  width: 375px;
+  width: 100%;
   height: 186px;
   background-color: #353535;
-}
-@media (min-width: 1440px) {
-  footer {
-    width: 1440px;
-  }
 }
 footer a {
   text-decoration: none;

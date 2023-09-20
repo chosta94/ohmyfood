@@ -190,12 +190,19 @@ header img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px 0 15px;
+  padding: 0 0px 0 15px;
 }
 @media (min-width: 1440px) {
   .section__menu__box {
     width: 634px;
   }
+}
+.section__menu__box:hover .section__menu__box__price {
+  transform: translateX(-60px);
+}
+.section__menu__box:hover .valid {
+  opacity: 1;
+  transform: translateX(0px);
 }
 .section__menu__box__title {
   font-family: "Roboto";
@@ -212,22 +219,79 @@ header img {
   font-weight: 700;
   font-size: 15px;
   color: #353535;
+  margin-right: 15.04px;
+  transition: transform 0.2s ease-out;
 }
 .section__menu__box__price--align {
   height: 42px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
 }
 .section__menu__entree {
   margin-bottom: 40px;
+  visibility: hidden;
+  animation: boxDegrade 0.5s forwards;
 }
 .section__menu__plat {
   margin-bottom: 40px;
+  visibility: hidden;
+  animation: boxDegrade 0.5s 0.5s forwards;
 }
 .section__menu__dessert {
   margin-bottom: 40px;
+  visibility: hidden;
+  animation: boxDegrade 0.5s 1s forwards;
 }
 
+.valid {
+  position: absolute;
+  width: 59px;
+  height: 69px;
+  border-top-right-radius: 15.04px;
+  border-bottom-right-radius: 15.04px;
+  background: #99E2D0;
+  transform: translateX(50px);
+  right: 15.04px;
+  opacity: 0;
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1440px) {
+  .valid {
+    right: 200px;
+  }
+}
+.valid__rond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  padding: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.valid .fa-check {
+  color: #99E2D0;
+  font-size: 1em;
+}
+
+@keyframes boxDegrade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 /***** Boutons *****/
 .btn {
   width: 186px;
@@ -245,7 +309,6 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 450ms;
 }
 .btn__div {
   width: 100%;
@@ -253,16 +316,18 @@ header img {
   justify-content: center;
 }
 .btn:hover {
-  transform: scale(1.1);
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 /***** Font *****/
-i {
+.like {
   font-size: 0.8em;
   color: #F3F3F3;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transition: color 1s ease, text-shadow 0.1s ease;
 }
-i:hover {
+.like:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
           background-clip: text;

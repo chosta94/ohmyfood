@@ -118,6 +118,7 @@ header {
                 border-bottom: 3px solid $color-green;
                 margin-top: 5px;
             }
+            
         }
     }
     &__box {
@@ -130,10 +131,19 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 0 15px 0 15px;
+        padding: 0 0px 0 15px;
         @media (min-width: $bp-desktop) {
             width: 634px;
          }
+        &:hover {
+            .section__menu__box__price {
+                transform: translateX(-60px);
+            }
+            .valid {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
         &__title {
             @include police('Roboto', 500, 18px);
         }
@@ -143,22 +153,80 @@ header {
         &__price {
             @include police('Roboto', 700, 15px);
             color: $color-footer;
+            margin-right: 15.04px;
+            transition: transform 0.2s ease-out;
             &--align {
                 height: 42px;
                 display: flex;
-                align-items: flex-end;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
             }
         }
     }
     &__entree {
         margin-bottom: 40px;
+        visibility: hidden;
+        animation: boxDegrade 0.5s forwards;
     }
     &__plat {
         margin-bottom: 40px;
+        visibility: hidden;
+        animation: boxDegrade 0.5s 0.5s forwards;
     }
     &__dessert {
         margin-bottom: 40px;
+        visibility: hidden;
+        animation: boxDegrade 0.5s 1s forwards;
     }   
+}
+
+
+.valid {
+    position: absolute;
+    width: 59px;
+    height: 69px;
+    border-top-right-radius: 15.04px;
+    border-bottom-right-radius: 15.04px;
+    background: $color-green;
+    transform: translateX(50px);
+    right: 15.04px;
+    opacity: 0;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    @media (min-width: $bp-desktop) {
+        right: 200px;
+     }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__rond {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 50%;
+        padding: 3px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .fa-check {
+        color: $color-green;
+        font-size: 1em;
+    }
+}
+
+@keyframes boxDegrade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+        
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 /***** Boutons *****/
@@ -169,18 +237,19 @@ header {
         display: flex;
         justify-content: center;
     }
-    transition: transform 450ms;
     &:hover {
-        transform: scale(1.1);
+        background: linear-gradient(lighten($color-pink, 5%), lighten($color-purple, 5%));
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.50);
     }
 }
 
 
 /***** Font *****/
-i {
+.like {
     font-size: 0.8em;
     color: $color-background;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: color 1s ease, text-shadow 0.1s ease;
     &:hover {
         background: linear-gradient($color-pink, $color-purple);
         background-clip: text;
@@ -188,3 +257,5 @@ i {
         text-shadow: none;
     }
 }
+
+

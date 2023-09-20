@@ -193,12 +193,15 @@ header img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px 0 15px;
+  padding: 0 0px 0 15px;
 }
 @media (min-width: 1440px) {
   .section__menu__box {
     width: 634px;
   }
+}
+.section__menu__box:hover .add {
+  animation: boxDegrade 0.2s forwards;
 }
 .section__menu__box__title {
   font-family: "Roboto";
@@ -215,22 +218,62 @@ header img {
   font-weight: 700;
   font-size: 15px;
   color: #353535;
+  margin-right: 15.04px;
 }
 .section__menu__box__price--align {
   height: 42px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .section__menu__entree {
   margin-bottom: 40px;
+  visibility: hidden;
+  animation: boxDegrade 0.5s forwards;
 }
 .section__menu__plat {
   margin-bottom: 40px;
+  visibility: hidden;
+  animation: boxDegrade 0.5s 0.5s forwards;
 }
 .section__menu__dessert {
   margin-bottom: 40px;
+  visibility: hidden;
+  animation: boxDegrade 0.5s 1s forwards;
 }
 
+.add {
+  color: #353535;
+  visibility: hidden;
+}
+.add:hover {
+  cursor: pointer;
+}
+
+.valid {
+  position: absolute;
+  width: 59px;
+  height: 69px;
+  border-top-right-radius: 15.04px;
+  border-bottom-right-radius: 15.04px;
+  background: #99E2D0;
+  right: 15.04px;
+  visibility: hidden;
+}
+
+@keyframes boxDegrade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 /***** Boutons *****/
 .btn {
   width: 186px;
@@ -248,7 +291,6 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 450ms;
 }
 .btn__div {
   width: 100%;
@@ -256,16 +298,18 @@ header img {
   justify-content: center;
 }
 .btn:hover {
-  transform: scale(1.1);
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 /***** Font *****/
-i {
+.like {
   font-size: 0.8em;
   color: #F3F3F3;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transition: color 1s ease, text-shadow 0.1s ease;
 }
-i:hover {
+.like:hover {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
           background-clip: text;
@@ -462,12 +506,8 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin-left: 34px;
-}
-@media (min-width: 1440px) {
-  .fonctionnement__title {
-    margin-left: 360px;
-  }
+  position: relative;
+  left: -10px;
 }
 .fonctionnement__div {
   width: 322.49px;
@@ -577,12 +617,6 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin-left: 34px;
-}
-@media (min-width: 1440px) {
-  .restaurants__title {
-    margin-left: 360px;
-  }
 }
 .restaurants__nouveau {
   display: flex;
@@ -646,10 +680,8 @@ main {
   margin-left: 14px;
 }
 .restaurants__div__bottom__img {
-  position: relative;
-  left: 85%;
-  bottom: 70px;
   cursor: pointer;
+  margin-right: 14px;
 }
 
 @media (min-width: 1440px) {
@@ -708,10 +740,10 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 450ms;
 }
 .btn:hover {
-  transform: scale(1.1);
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 /***** Font *****/
@@ -719,6 +751,7 @@ i {
   font-size: 1.5em;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transition: color 1s ease, text-shadow 0.1s ease;
 }
 i:hover {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -726,4 +759,49 @@ i:hover {
           background-clip: text;
   color: transparent;
   text-shadow: none;
+}
+
+/***** Loader *****/
+.loader-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: degrade 3s forwards;
+}
+
+.loader {
+  border: 8px solid #F3F3F3;
+  border-top: 8px solid #FF79DA;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: rotation 1s ease infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes degrade {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }/*# sourceMappingURL=style.css.map */
